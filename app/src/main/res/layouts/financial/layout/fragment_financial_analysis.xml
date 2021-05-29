@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/b12"
+    tools:context=".FainancialPackage.FinancialAnalysis">
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/aclonica"
+        android:text="Fainancial Analysis"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView31">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/aclonica"
+                    android:text="Outlay Analysis"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ffiana_btnListIn" />
+
+                <TextView
+                    android:id="@+id/textView32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/aclonica"
+                    android:text="Income Analysis"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/ffiana_chart1"
+                    android:layout_width="0dp"
+                    android:layout_height="500dp"
+                    android:layout_marginTop="50dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView32" />
+
+                <RadioGroup
+                    android:id="@+id/ffiana_chart1RdGroup"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ffiana_chart1">
+
+                    <RadioButton
+                        android:id="@+id/ffiana_chart1RdDay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="#FFFFFF"
+                        android:buttonTint="#FFFFFF"
+                        android:text="Daily"
+                        android:textColor="#FFFFFF" />
+
+                    <RadioButton
+                        android:id="@+id/ffiana_chart1RdMonth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="#FFFFFF"
+                        android:buttonTint="#FFFFFF"
+                        android:text="Monthly"
+                        android:textColor="#FFFFFF" />
+
+                    <RadioButton
+                        android:id="@+id/ffiana_chart1RdYear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="#FFFFFF"
+                        android:text="Yearly"
+                        android:textColor="#FFFFFF" />
+                </RadioGroup>
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/ffiana_chart2"
+                    android:layout_width="0dp"
+                    android:layout_height="500dp"
+                    android:layout_marginTop="50dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/ffiana_chart1"
+                    app:layout_constraintTop_toBottomOf="@+id/textView33" />
+
+                <RadioGroup
+                    android:id="@+id/ffiana_chart2RdGroup"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ffiana_chart2">
+
+                    <RadioButton
+                        android:id="@+id/ffiana_chart2RdDay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="#FFFFFF"
+                        android:buttonTint="#FFFFFF"
+                        android:text="Daily"
+                        android:textColor="#FFFFFF" />
+
+                    <RadioButton
+                        android:id="@+id/ffiana_chart2RdMonth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="#FFFFFF"
+                        android:buttonTint="#FFFFFF"
+                        android:text="Monthly"
+                        android:textColor="#FFFFFF" />
+
+                    <RadioButton
+                        android:id="@+id/ffiana_chart2RdYear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="#FFFFFF"
+                        android:text="Yearly"
+                        android:textColor="#FFFFFF" />
+                </RadioGroup>
+
+                <Button
+                    android:id="@+id/ffiana_btnListIn"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rounded_corners"
+                    android:backgroundTint="#252537"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:text="List of Income"
+                    app:layout_constraintStart_toStartOf="@+id/ffiana_chart1RdGroup"
+                    app:layout_constraintTop_toBottomOf="@+id/ffiana_chart1RdGroup" />
+
+                <Button
+                    android:id="@+id/ffiana_btnPdfIn"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/rounded_corners"
+                    android:backgroundTint="#404060"
+                    android:text="get PDF"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="@+id/ffiana_chart1RdGroup"
+                    app:layout_constraintTop_toTopOf="@+id/ffiana_btnListIn" />
+
+                <Button
+                    android:id="@+id/ffiana_btnListOu"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/rounded_corners"
+                    android:backgroundTint="#252537"
+                    android:text="List Of Outlay"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/ffiana_chart2RdGroup"
+                    app:layout_constraintTop_toBottomOf="@+id/ffiana_chart2RdGroup" />
+
+                <Button
+                    android:id="@+id/ffiana_btnPdfOu"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/rounded_corners"
+                    android:backgroundTint="#404060"
+                    android:text="get PDF"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="@+id/ffiana_chart2RdGroup"
+                    app:layout_constraintTop_toTopOf="@+id/ffiana_btnListOu" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/ffiana_btnBack"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/abc_vector_test"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

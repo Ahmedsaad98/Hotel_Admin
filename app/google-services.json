@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "1039529043185",
+    "firebase_url": "https://hotel-gp-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "hotel-gp",
+    "storage_bucket": "hotel-gp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1039529043185:android:d5b150427143d18f193550",
+        "android_client_info": {
+          "package_name": "com.ahmedalraziki.g_admin_final"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1039529043185-j1j45bst8il97okuf9l01n7q3j9o4ibj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPL3_vGkvLEfalf26wg1J_Xdaclrj_YRE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1039529043185-j1j45bst8il97okuf9l01n7q3j9o4ibj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1039529043185:android:1f8dd5f08405f83b193550",
+        "android_client_info": {
+          "package_name": "com.ahmedalraziki.graduation_admin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1039529043185-j1j45bst8il97okuf9l01n7q3j9o4ibj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPL3_vGkvLEfalf26wg1J_Xdaclrj_YRE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1039529043185-j1j45bst8il97okuf9l01n7q3j9o4ibj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1039529043185:android:e1985adaf7a32348193550",
+        "android_client_info": {
+          "package_name": "com.ahmedalraziki.graduation_client"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1039529043185-j1j45bst8il97okuf9l01n7q3j9o4ibj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPL3_vGkvLEfalf26wg1J_Xdaclrj_YRE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1039529043185-j1j45bst8il97okuf9l01n7q3j9o4ibj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
